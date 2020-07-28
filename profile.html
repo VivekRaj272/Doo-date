@@ -1,0 +1,209 @@
+<html>
+  <head>
+    <title>Doo Date - Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <!-- local bootstrap Style -->
+    <!-- <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" /> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="Doo-style.css" />
+    <link rel="stylesheet" type="text/css" href="Doo-common.css" />
+
+    <link rel="stylesheet" href="https://use.typekit.net/olc3ekr.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-image">
+          <img
+            src="./images/profile-page/Group 6561.svg"
+            alt="logo"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- main section profile page -->
+    <section class="mainSection-profile-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="profile-image-box">
+              <div class="image-box-content">
+                <img
+                  src="./images/profile-page/profile.png"
+                  alt="profile image"
+                  class="img-fluid profile-image-self"
+                />
+                <div>
+                  <a href="#" class="change-profile-pic">Chnage Picture</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="tab-box">
+              <span
+                class="tab-self bg-red"
+                id="Maccount"
+                onclick="openCity(event,'account')"
+                >My Account</span
+              >
+              <span
+                class="tab-self"
+                id="Mgroups"
+                onclick="openCity(event,'groups')"
+                >My Groups</span
+              >
+              <span
+                class="tab-self"
+                id="Mprivacy"
+                onclick="openCity(event,'privacy')"
+                >My Privacy</span
+              >
+              <div class="under-line">
+                <div class="under-line-self"></div>
+              </div>
+            </div>
+
+            <!-- porile detail area -->
+            <div class="tab-data" id="account" >
+              <div class="detail-form">
+                <form>
+                  <div class="form-group row">
+                    <label
+                      for="inputPassword"
+                      class="col-lg-2 col-sm-4 col-form-label"
+                      >Display Name</label
+                    >
+                    <div class="col-lg-4 col-sm-5">
+                      <input
+                        type="text"
+                        class="form-control form-pro"
+                        id="inputPassword"
+                        placeholder="Password"
+                      />
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                      <button
+                        type="submit"
+                        class="btn btn-primary mb-2 edit-button"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label
+                      for="inputPassword"
+                      class="col-lg-2 col-sm-4 col-form-label"
+                      >Full Name</label
+                    >
+                    <div class="cl-lg-4 col-sm-5">
+                      <input
+                        type="text"
+                        class="form-control form-pro"
+                        id="inputPassword"
+                        placeholder="Steve Rogers"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label
+                      for="inputPassword"
+                      class="col-lg-2 col-sm-2 col-form-label"
+                      >Email</label
+                    >
+                    <div class="col-lg-4 col-sm-5">
+                      <input
+                        type="email"
+                        class="form-control form-pro"
+                        id="inputPassword"
+                        placeholder="Steverogers@gmail.com"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+     
+            </div>
+            <!-- groups details  -->
+            <div class="tab-data" id="groups" style="display: none;">Group</div>
+            <!-- Privacy details -->
+            <div class="tab-data" id="privacy" style="display: none;">
+              Privacy
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- main section profile page end -->
+
+    <!-- footer -->
+    <footer class="doo-footer text-center mt-5">
+      <p class="psans-regular letter-spacing-1 gleecus-dev-text mb-0">
+        Developed by Gleecus Techlabs
+      </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+      function openCity(evt, detailName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("tab-data");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tab-self");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" bg-red", "");
+        }
+
+        document.getElementById(detailName).style.display = "block";
+        evt.currentTarget.className += " bg-red";
+        // check is the element has class or not
+        let Maccount = document.querySelector("#Maccount");
+        let Mgroups = document.querySelector("#Mgroups");
+        let Mprivacy = document.querySelector("#Mprivacy");
+
+        // border class
+
+        let underLine = document.querySelector(".under-line-self");
+        if (Mgroups.classList.contains("bg-red")) {
+          underLine.classList.add("m-l");
+          underLine.classList.remove("m-l-l");
+          underLine.classList.remove("m-l-n");
+        }
+        if (Mprivacy.classList.contains("bg-red")) {
+          underLine.classList.add("m-l-l");
+          underLine.classList.remove("m-l");
+          underLine.classList.remove("m-l-n");
+        }
+        if (Maccount.classList.contains("bg-red")) {
+          underLine.classList.add("m-l-n");
+        }
+      }
+
+      // jquery code
+      $(".tab-self").click(function () {
+        $(".tab-data").addClass("animation");
+      });
+    </script>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
