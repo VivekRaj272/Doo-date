@@ -90,8 +90,9 @@ body {
   letter-spacing: 0.48px;
   color: #505050;
   display: inline-block;
-  margin: 0px 15px;
-  font-size: 19px;
+  margin: 0px 10px;
+  font-size: 16px;
+  white-space: nowrap;
 }
 .profile-sidebar-form {
   margin-top: 30px;
@@ -209,6 +210,10 @@ body {
 /* profile main area */
 .profile-main-area {
   margin-top: 20px;
+}
+
+.profile-title {
+  display: flex;
 }
 
 
