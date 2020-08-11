@@ -1,0 +1,320 @@
+<html>
+
+<head>
+    <title>Doo Date - Settings</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Doo-style.css">
+    <link rel="stylesheet" type="text/css" href="Doo-common.css">
+    <link rel="stylesheet" type="text/css" href="profile-style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body class="">
+    <section class="fixed-sidebar">
+        <div class="fixed-sidebar-icons">
+            <div class="top-icons">
+                <img src="./assets/images/logo.svg" alt="logo" class="img-fluid" />
+            </div>
+            <div class="top-icons">
+                <a href="">
+                    <img src="./assets/images/sidebar/1.svg" alt="icon" class="img-fluid" />
+                </a>
+            </div>
+            <div class="top-icons">
+                <a href="">
+                    <img src="./assets/images/sidebar/2.svg" alt="icon" class="img-fluid" />
+                </a>
+            </div>
+            <div class="top-icons">
+                <a href="">
+                    <img src="./assets/images/sidebar/2.svg" alt="icon" class="img-fluid" />
+                </a>
+            </div>
+            <div class="top-icons">
+                <a href="">
+                    <img src="./assets/images/sidebar/2.svg" alt="icon" class="img-fluid" />
+                </a>
+            </div>
+            <div class="top-icons">
+                <a href="" class="active-link">
+                    <img src="./assets/images/sidebar/3.svg" alt="icon" class="img-fluid" />
+                </a>
+            </div>
+            <div class="back-button">
+                <i class="far fa-arrow-alt-circle-left"></i>
+            </div>
+        </div>
+    </section>
+    <main class="profile-page-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4">
+                    <div class="profile-sidebar-box">
+                        <!-- profile head area -->
+                        <div class="profile-bar-head">
+                            <img src="./assets/images/profile.png" alt="profile picture" class="img-fluid pro-pic" data-toggle="modal" data-target="#profielModal" />
+                            <h3 class="profile-name">SteveRogers11</h3>
+                            <div class="profile-title">
+                                <img src="./assets/images/trophy.svg" alt="trophy image" />
+                                <span class="profile-title-self">Novice Task Master</span>
+                                <img src="./assets/images/trophy.svg" alt="trophy image" />
+                            </div>
+                        </div>
+                        <!-- profile side bar form area -->
+                        <div class="profile-sidebar-form">
+                            <form>
+                                <div class="form-group form-filed-box">
+                                    <label for="username" class="top-label">Username</label>
+                                    <input type="text" class="form-control input-area" id="username" placeholder="Enter Your User Name" value="SteveRogers11" />
+                                    <small class="form-text text-muted edit-form">EDIT</small>
+                                </div>
+                                <div class="form-group form-filed-box">
+                                    <label for="name" class="top-label">Name</label>
+                                    <input type="text" class="form-control input-area" id="name" placeholder="Enter Your Name" value="Steve Rogers" />
+                                    <small class="form-text text-muted edit-form">EDIT</small>
+                                </div>
+                                <div class="form-group form-filed-box">
+                                    <label for="email" class="top-label">Email</label>
+                                    <input type="email" class="form-control input-area email-input" id="email" disabled value="Steverog@gmail.com" />
+                                    <small class="form-text text-muted under-input-text">Connected Via google and facebook account</small>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- profile side bar form area end -->
+                        <div class="profile-from">
+                            <span>Doodater since May 2019</span>
+                        </div>
+                    </div>
+                    <div class="footer-crd mt-3 text-center">
+                        <a href="">Developed by Gleecus Techlabs</a>
+                    </div>
+                </div>
+                <!-- main area of profile -->
+                <div class="col-lg-9 col-md-9">
+                    <a class="back-link font-14" href="#"> <i class="fa fa-chevron-left  mr-2" aria-hidden="true"></i> Back</a>
+                    <div class="d-flex  justify-content-between grey-bborder">
+                        <h4 class="page-header no-border">My Doo Date Settings</h4>
+                        <button class="doo-btn">Reset to default</button>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card-border p-3 my-3">
+                                <p class="text-color-grey font-20 font-weight-bold white-bborder pb-2">Notification settings</p>
+                                <div class="switch-wrap d-flex justify-content-between mb-2">
+                                    <span class="d-inline-block w-70">Enable fullscreen notifications for reminders</span>
+                                    <label class="switch d-inline-block ">
+                                        <input type="checkbox" name="" id="" value="1">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <div class="switch-wrap d-flex justify-content-between mb-2">
+                                    <span class="d-inline-block w-70">Enable task sharing notifications</span>
+                                    <label class="switch d-inline-block ">
+                                        <input type="checkbox" name="" id="" value="1">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <div class="switch-wrap d-flex justify-content-between mb-2">
+                                    <span class="d-inline-block w-70">Enable reminder notifications as alarms</span>
+                                    <label class="switch d-inline-block ">
+                                        <input type="checkbox" name="" id="" value="1">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card-border p-3 my-3">
+                                <p class="text-color-grey font-20 font-weight-bold white-bborder pb-2">Bulletin settings</p>
+                                <div class="switch-wrap d-flex justify-content-between mb-2">
+                                    <span class="d-inline-block w-70">Show My Daily Bulletin @</span>
+                                    <label class="switch d-inline-block ">
+                                        <input type="checkbox" name="" id="" value="1">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <div class="switch-wrap d-flex justify-content-between mb-2">
+                                    <span class="d-inline-block w-70">Show My Weekly Bulletin @</span>
+                                    <label class="switch d-inline-block ">
+                                        <input type="checkbox" name="" id="" value="1">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card-border p-3 my-3">
+                                <p class="text-color-grey font-20 font-weight-bold white-bborder pb-2">Task settings</p>
+                                <div class="switch-wrap d-flex justify-content-between mb-2">
+                                    <span class="d-inline-block w-70">Add new tasks on top</span>
+                                    <label class="switch d-inline-block ">
+                                        <input type="checkbox" name="" id="" value="1">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <div class="switch-wrap d-flex justify-content-between mb-2">
+                                    <span class="d-inline-block w-70">Confirm before deleting</span>
+                                    <label class="switch d-inline-block ">
+                                        <input type="checkbox" name="" id="" value="1">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <div class="switch-wrap d-flex justify-content-between mb-2">
+                                    <span class="d-inline-block w-70">Move shared tasks to top</span>
+                                    <label class="switch d-inline-block ">
+                                        <input type="checkbox" name="" id="" value="1">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <div class="switch-wrap d-flex justify-content-between mb-2">
+                                    <span class="d-inline-block w-70">Play Completion sound</span>
+                                    <label class="switch d-inline-block ">
+                                        <input type="checkbox" name="" id="" value="1">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card-border p-3 my-3">
+                                <p class="text-color-grey font-20 font-weight-bold white-bborder pb-2">Time settings</p>
+                                <div class="switch-wrap d-flex justify-content-between mb-2">
+                                    <span class="d-inline-block w-70">Enable fullscreen notifications for reminders</span>
+                                    <label class="switch d-inline-block ">
+                                        <input type="checkbox" name="" id="" value="1">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <div class="switch-wrap d-flex justify-content-between mb-2">
+                                    <span class="d-inline-block w-70">Enable task sharing notifications</span>
+                                    <label class="switch d-inline-block ">
+                                        <input type="checkbox" name="" id="" value="1">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <div class="switch-wrap d-flex justify-content-between mb-2">
+                                    <span class="d-inline-block w-70">Enable reminder notifications as alarms</span>
+                                    <label class="switch d-inline-block ">
+                                        <input type="checkbox" name="" id="" value="1">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card-border p-3 my-3">
+                                <p class="text-color-grey font-20 font-weight-bold white-bborder pb-2">Reminder settings</p>
+                                <div class="switch-wrap d-flex justify-content-between mb-2">
+                                    <span class="d-inline-block w-70">Enable fullscreen notifications for reminders</span>
+                                    <label class="switch d-inline-block ">
+                                        <input type="checkbox" name="" id="" value="1">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <div class="switch-wrap d-flex justify-content-between mb-2">
+                                    <span class="d-inline-block w-70">Enable task sharing notifications</span>
+                                    <label class="switch d-inline-block ">
+                                        <input type="checkbox" name="" id="" value="1">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <div class="switch-wrap d-flex justify-content-between mb-2">
+                                    <span class="d-inline-block w-70">Enable reminder notifications as alarms</span>
+                                    <label class="switch d-inline-block ">
+                                        <input type="checkbox" name="" id="" value="1">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card-border p-3 my-3">
+                                <p class="text-color-grey font-20 font-weight-bold white-bborder pb-2">Data and Privacy settings</p>
+                                <div class="switch-wrap d-flex justify-content-between mb-2">
+                                    <span class="d-inline-block w-70">Enable fullscreen notifications for reminders</span>
+                                    <label class="switch d-inline-block ">
+                                        <input type="checkbox" name="" id="" value="1">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <div class="switch-wrap d-flex justify-content-between mb-2">
+                                    <span class="d-inline-block w-70">Enable task sharing notifications</span>
+                                    <label class="switch d-inline-block ">
+                                        <input type="checkbox" name="" id="" value="1">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <div class="switch-wrap d-flex justify-content-between mb-2">
+                                    <span class="d-inline-block w-70">Enable reminder notifications as alarms</span>
+                                    <label class="switch d-inline-block ">
+                                        <input type="checkbox" name="" id="" value="1">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card-border p-3 my-3">
+                                <p class="text-color-grey font-20 font-weight-bold white-bborder pb-2">Task sharing settings</p>
+                                <div class="switch-wrap d-flex justify-content-between mb-2">
+                                    <span class="d-inline-block w-70">Enable fullscreen notifications for reminders</span>
+                                    <label class="switch d-inline-block ">
+                                        <input type="checkbox" name="" id="" value="1">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <div class="switch-wrap d-flex justify-content-between mb-2">
+                                    <span class="d-inline-block w-70">Enable task sharing notifications</span>
+                                    <label class="switch d-inline-block ">
+                                        <input type="checkbox" name="" id="" value="1">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <div class="switch-wrap d-flex justify-content-between mb-2">
+                                    <span class="d-inline-block w-70">Enable reminder notifications as alarms</span>
+                                    <label class="switch d-inline-block ">
+                                        <input type="checkbox" name="" id="" value="1">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card-border p-3 my-3">
+                                <p class="text-color-grey font-20 font-weight-bold white-bborder pb-2">Account Settings</p>
+                                <div class="switch-wrap d-flex justify-content-between mb-2">
+                                    <span class="d-inline-block w-70">Enable fullscreen notifications for reminders</span>
+                                    <label class="switch d-inline-block ">
+                                        <input type="checkbox" name="" id="" value="1">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <div class="switch-wrap d-flex justify-content-between mb-2">
+                                    <span class="d-inline-block w-70">Enable task sharing notifications</span>
+                                    <label class="switch d-inline-block ">
+                                        <input type="checkbox" name="" id="" value="1">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <div class="switch-wrap d-flex justify-content-between mb-2">
+                                    <span class="d-inline-block w-70">Enable reminder notifications as alarms</span>
+                                    <label class="switch d-inline-block ">
+                                        <input type="checkbox" name="" id="" value="1">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,209 +1,442 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Doo Date - Home</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="" />
+    <meta name="generator" content="" />
+    <title>DO Profile Page</title>
+    <!-- link to font awsome 5. -->
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    />
-    <!-- local bootstrap Style -->
-    <!-- <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" /> -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
 
-    <link rel="stylesheet" type="text/css" href="Doo-style.css" />
-    <link rel="stylesheet" type="text/css" href="Doo-common.css" />
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
 
-    <link rel="stylesheet" href="https://use.typekit.net/olc3ekr.css" />
+    <!-- custom style link -->
+    <link rel="stylesheet" href="profile-style.css" />
+
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="script.js"></script>
   </head>
-
   <body>
-    <!-- Header -->
-    <header>
-      <div class="container">
-        <div class="header-image">
-          <img
-            src="./images/profile-page/Group 6561.svg"
-            alt="logo"
-            class="img-fluid"
-          />
+    <section class="fixed-sidebar">
+      <div class="fixed-sidebar-icons">
+        <div class="top-icons">
+          <img src="./assets/images/logo.svg" alt="logo" class="img-fluid" />
         </div>
-      </div>
-    </header>
+        <div class="top-icons">
+          <a href="">
+            <img
+              src="./assets/images/sidebar/1.svg"
+              alt="icon"
+              class="img-fluid"
+            />
+          </a>
+        </div>
+        <div class="top-icons">
+          <a href="">
+            <img
+              src="./assets/images/sidebar/2.svg"
+              alt="icon"
+              class="img-fluid"
+            />
+          </a>
+        </div>
+        <div class="top-icons">
+          <a href="">
+            <img
+              src="./assets/images/sidebar/2.svg"
+              alt="icon"
+              class="img-fluid"
+            />
+          </a>
+        </div>
+        <div class="top-icons">
+          <a href="">
+            <img
+              src="./assets/images/sidebar/2.svg"
+              alt="icon"
+              class="img-fluid"
+            />
+          </a>
+        </div>
+        <div class="top-icons">
+          <a href="" class="active-link">
+            <img
+              src="./assets/images/sidebar/3.svg"
+              alt="icon"
+              class="img-fluid"
+            />
+          </a>
+        </div>
 
-    <!-- main section profile page -->
-    <section class="mainSection-profile-page">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="profile-image-box">
-              <div class="image-box-content">
-                <img
-                  src="./images/profile-page/profile.png"
-                  alt="profile image"
-                  class="img-fluid profile-image-self"
-                />
-                <div>
-                  <a href="#" class="change-profile-pic">Chnage Picture</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-9">
-            <div class="tab-box">
-              <span
-                class="tab-self bg-red"
-                id="Maccount"
-                onclick="openCity(event,'account')"
-                >My Account</span
-              >
-              <span
-                class="tab-self"
-                id="Mgroups"
-                onclick="openCity(event,'groups')"
-                >My Groups</span
-              >
-              <span
-                class="tab-self"
-                id="Mprivacy"
-                onclick="openCity(event,'privacy')"
-                >My Privacy</span
-              >
-              <div class="under-line">
-                <div class="under-line-self"></div>
-              </div>
-            </div>
-
-            <!-- porile detail area -->
-            <div class="tab-data" id="account" >
-              <div class="detail-form">
-                <form>
-                  <div class="form-group row">
-                    <label
-                      for="inputPassword"
-                      class="col-lg-2 col-sm-4 col-form-label"
-                      >Display Name</label
-                    >
-                    <div class="col-lg-4 col-sm-5">
-                      <input
-                        type="text"
-                        class="form-control form-pro"
-                        id="inputPassword"
-                        placeholder="Password"
-                      />
-                    </div>
-                    <div class="col-lg-3 col-sm-3">
-                      <button
-                        type="submit"
-                        class="btn btn-primary mb-2 edit-button"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label
-                      for="inputPassword"
-                      class="col-lg-2 col-sm-4 col-form-label"
-                      >Full Name</label
-                    >
-                    <div class="cl-lg-4 col-sm-5">
-                      <input
-                        type="text"
-                        class="form-control form-pro"
-                        id="inputPassword"
-                        placeholder="Steve Rogers"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label
-                      for="inputPassword"
-                      class="col-lg-2 col-sm-2 col-form-label"
-                      >Email</label
-                    >
-                    <div class="col-lg-4 col-sm-5">
-                      <input
-                        type="email"
-                        class="form-control form-pro"
-                        id="inputPassword"
-                        placeholder="Steverogers@gmail.com"
-                      />
-                    </div>
-                  </div>
-                </form>
-              </div>
-
-     
-            </div>
-            <!-- groups details  -->
-            <div class="tab-data" id="groups" style="display: none;">Group</div>
-            <!-- Privacy details -->
-            <div class="tab-data" id="privacy" style="display: none;">
-              Privacy
-            </div>
-          </div>
+        <div class="back-button">
+          <i class="far fa-arrow-alt-circle-left"></i>
         </div>
       </div>
     </section>
-    <!-- main section profile page end -->
 
-    <!-- footer -->
-    <footer class="doo-footer text-center mt-5">
-      <p class="psans-regular letter-spacing-1 gleecus-dev-text mb-0">
-        Developed by Gleecus Techlabs
-      </p>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <main class="profile-page-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <div class="profile-sidebar-box">
+              <!-- profile head area -->
+              <div class="profile-bar-head">
+                <img
+                  src="./assets/images/profile.png"
+                  alt="profile picture"
+                  class="img-fluid pro-pic"
+                  data-toggle="modal"
+                  data-target="#profielModal"
+                />
+                <h3 class="profile-name">SteveRogers11</h3>
+                <div class="profile-title">
+                  <img src="./assets/images/trophy.svg" alt="trophy image" />
+                  <span class="profile-title-self">Novice Task Master</span>
+                  <img src="./assets/images/trophy.svg" alt="trophy image" />
+                </div>
+              </div>
 
-    <script>
-      function openCity(evt, detailName) {
-        var i, x, tablinks;
-        x = document.getElementsByClassName("tab-data");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tab-self");
-        for (i = 0; i < x.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" bg-red", "");
-        }
+              <!-- profile side bar form area -->
+              <div class="profile-sidebar-form">
+                <form>
+                  <div class="form-group form-filed-box">
+                    <label for="username" class="top-label">Username</label>
+                    <input
+                      type="text"
+                      class="form-control input-area"
+                      id="username"
+                      placeholder="Enter Your User Name"
+                      value="SteveRogers11"
+                    />
+                    <small class="form-text text-muted edit-form">EDIT</small>
+                  </div>
+                  <div class="form-group form-filed-box">
+                    <label for="name" class="top-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control input-area"
+                      id="name"
+                      placeholder="Enter Your Name"
+                      value="Steve Rogers"
+                    />
+                    <small class="form-text text-muted edit-form">EDIT</small>
+                  </div>
+                  <div class="form-group form-filed-box">
+                    <label for="email" class="top-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control input-area email-input"
+                      id="email"
+                      disabled
+                      value="Steverog@gmail.com"
+                    />
+                    <small class="form-text text-muted under-input-text"
+                      >Connected Via google and facebook account</small
+                    >
+                  </div>
+                </form>
+              </div>
+              <!-- profile side bar form area end -->
+              <div class="profile-from">
+                <span>Doodater since May 2019</span>
+              </div>
+            </div>
+            <div class="footer-crd mt-3 text-center">
+              <a href="">Developed by Gleecus Techlabs</a>
+            </div>
+          </div>
+          <!-- main area of profile -->
+          <div class="col-lg-9 col-md-8">
+            <div class="profile-main-area">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="pro-main-card">
+                    <div class="upper-part">
+                      <img
+                        src="./assets/images/mainarea/1.svg"
+                        alt="main area image"
+                        class="img-fluid"
+                      />
+                      <div class="text-part">
+                        <span>Subscription Plan</span>
+                        <h4>Premium</h4>
+                      </div>
+                    </div>
+                    <!-- bottom part -->
+                    <div class="bottom-part">
+                      <span class="strong-card-text">Annual plan</span>
+                      <span class="simple-card-text">
+                        Renewal due on Dec 2020</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- col one end -->
+                <div class="col-md-4">
+                  <div class="pro-main-card">
+                    <div class="upper-part">
+                      <img
+                        src="./assets/images/mainarea/trophy.svg"
+                        alt="main area image"
+                        class="img-fluid"
+                      />
+                      <div class="text-part">
+                        <span>Task Master</span>
+                        <h4>Novice</h4>
+                      </div>
+                    </div>
+                    <!-- bottom part -->
+                    <div class="bottom-part">
+                      <span class="strong-card-text">125 points</span>
+                      <span class="simple-card-text">
+                        225 points to reach next level</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- col-2 end -->
+                <div class="col-md-3 col-4">
+                  <div class="small-hori-box">
+                    <div class="icon-part">
+                      <img
+                        src="./assets/images/mainarea/outline.svg"
+                        alt="outline icon"
+                      />
+                    </div>
+                    <div class="text-part-sm-box">
+                      <span>Synced devices</span>
+                      <h5>6 Devices</h5>
+                    </div>
+                  </div>
+                  <!-- box 2 -->
+                  <div class="small-hori-box-sec">
+                    <div class="icon-part-sec">
+                      <img
+                        src="./assets/images/mainarea/outline.svg"
+                        alt="outline icon"
+                      />
+                    </div>
+                    <div class="text-part-sm-box">
+                      <span>6:55 pm</span>
+                      <h5>6:55 pm</h5>
+                      <a href="">on your Android device</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- row one of col 9 end -->
+              <div class="row main-second-row">
+                <div class="col-md-4">
+                  <div class="react-small-box">
+                    <div class="rect-sm-image-part">
+                      <img
+                        src="./assets/images/mainarea/planner.svg"
+                        alt="planner image"
+                      />
+                    </div>
+                    <div class="rect-sm-content">
+                      <span>Task lists Created</span>
+                      <h5>7 lists</h5>
+                    </div>
+                  </div>
+                  <div class="react-small-box rect-sm-box-sc">
+                    <div class="rect-sm-image-part">
+                      <img
+                        src="./assets/images/mainarea/019-document.svg"
+                        alt="planner image"
+                      />
+                    </div>
+                    <div class="rect-sm-content">
+                      <span>Tasks Created</span>
+                      <h5>165 Tasks</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="rect-box">
+                        <img
+                          src="./assets/images/mainarea/date (1).svg"
+                          alt="date image"
+                        />
+                        <div class="rect-box-content">
+                          <span>Weekly bulletin on</span>
+                          <h5>Monday</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="rect-box">
+                        <img
+                          src="./assets/images/mainarea/clock.svg"
+                          alt="date image"
+                        />
+                        <div class="rect-box-content">
+                          <span>Daily bulletin @</span>
+                          <h5>7:00 am</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="rect-box">
+                        <img
+                          src="./assets/images/mainarea/time-zone (1).svg"
+                          alt="date image"
+                        />
+                        <div class="rect-box-content">
+                          <span>Time Zone</span>
+                          <h5>Asia/Kolkata</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- row two of col 9  end -->
+              <!-- row 3rd start from here -->
 
-        document.getElementById(detailName).style.display = "block";
-        evt.currentTarget.className += " bg-red";
-        // check is the element has class or not
-        let Maccount = document.querySelector("#Maccount");
-        let Mgroups = document.querySelector("#Mgroups");
-        let Mprivacy = document.querySelector("#Mprivacy");
-
-        // border class
-
-        let underLine = document.querySelector(".under-line-self");
-        if (Mgroups.classList.contains("bg-red")) {
-          underLine.classList.add("m-l");
-          underLine.classList.remove("m-l-l");
-          underLine.classList.remove("m-l-n");
-        }
-        if (Mprivacy.classList.contains("bg-red")) {
-          underLine.classList.add("m-l-l");
-          underLine.classList.remove("m-l");
-          underLine.classList.remove("m-l-n");
-        }
-        if (Maccount.classList.contains("bg-red")) {
-          underLine.classList.add("m-l-n");
-        }
-      }
-
-      // jquery code
-      $(".tab-self").click(function () {
-        $(".tab-data").addClass("animation");
-      });
-    </script>
-
-    <script type="text/javascript" src="script.js"></script>
+              <div class="row mt-5">
+                <div class="col-md-5">
+                  <div class="profile-last-box">
+                    <div class="last-box-image">
+                      <img
+                        src="./assets/images/mainarea/alarm.svg"
+                        alt="alarm icon"
+                      />
+                    </div>
+                    <div class="last-box-content">
+                      <span>Notifications and preferences</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="profile-last-box">
+                    <div class="last-box-image">
+                      <img
+                        src="./assets/images/mainarea/data-security.svg"
+                        alt="alarm icon"
+                      />
+                    </div>
+                    <div class="last-box-content">
+                      <span>Data & Privacy settings</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-md-5">
+                  <div class="profile-last-box">
+                    <div class="last-box-image">
+                      <img
+                        src="./assets/images/mainarea/clock (1).svg"
+                        alt="alarm icon"
+                      />
+                    </div>
+                    <div class="last-box-content">
+                      <span>Task sharing settings</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="profile-last-box">
+                    <div class="last-box-image">
+                      <img
+                        src="./assets/images/mainarea/settings.svg"
+                        alt="alarm icon"
+                      />
+                    </div>
+                    <div class="last-box-content">
+                      <span>Account Settings</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- row 3rd end here -->
+            </div>
+          </div>
+          <!-- main area of profile end -->
+        </div>
+      </div>
+    </main>
+    <!-- pop Up Modal -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="profielModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <img
+                src="./assets/images/cancel.svg"
+                alt="cancel icon"
+                class="img-fluid cancle-image"
+              />
+              <!-- <span aria-hidden="true">&times;</span> -->
+            </button>
+          </div>
+          <div class="modal-body">
+            <h4 class="psans-bold">Chnage Your Avatar</h4>
+            <span class="psans-regular"
+              >Choose your Avatar from the below options</span
+            >
+            <div class="avatar-parent">
+              <div class="avatar avatar-1">
+                <a href="">
+                  <img
+                    src="./assets/images/person (3).svg"
+                    alt="person image"
+                    class="img-fluid"
+                  />
+                </a>
+                <span>Sassy Steve</span>
+              </div>
+              <div class="avatar avatar-2">
+                <a href="">
+                  <img
+                    src="./assets/images/woman (1).svg"
+                    alt="person image"
+                    class="img-fluid"
+                  />
+                </a>
+                <span>Joyful Jolly</span>
+              </div>
+              <div class="avatar avatar-3">
+                <a href="">
+                  <img
+                    src="./assets/images/person (4).svg"
+                    alt="person image"
+                    class="img-fluid"
+                  />
+                </a>
+                <span>Awless Alex</span>
+              </div>
+            </div>
+            <div class="save-btn">
+              <a href="#">Save</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- pop Up Modal End -->
   </body>
 </html>

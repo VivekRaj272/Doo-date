@@ -1,0 +1,284 @@
+<html>
+
+<head>
+    <title>My Achievements</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <!-- custom style -->
+    <link rel="stylesheet" type="text/css" href="profile-style.css">
+    <link rel="stylesheet" type="text/css" href="Doo-common.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body class="">
+    <section class="fixed-sidebar">
+        <div class="fixed-sidebar-icons">
+            <div class="top-icons">
+                <img src="./assets/images/logo.svg" alt="logo" class="img-fluid" />
+            </div>
+            <div class="top-icons">
+                <a href="">
+                    <img src="./assets/images/sidebar/1.svg" alt="icon" class="img-fluid" />
+                </a>
+            </div>
+            <div class="top-icons">
+                <a href="">
+                    <img src="./assets/images/sidebar/2.svg" alt="icon" class="img-fluid" />
+                </a>
+            </div>
+            <div class="top-icons">
+                <a href="">
+                    <img src="./assets/images/sidebar/2.svg" alt="icon" class="img-fluid" />
+                </a>
+            </div>
+            <div class="top-icons">
+                <a href="">
+                    <img src="./assets/images/sidebar/2.svg" alt="icon" class="img-fluid" />
+                </a>
+            </div>
+            <div class="top-icons">
+                <a href="" class="active-link">
+                    <img src="./assets/images/sidebar/3.svg" alt="icon" class="img-fluid" />
+                </a>
+            </div>
+            <div class="back-button">
+                <i class="far fa-arrow-alt-circle-left"></i>
+            </div>
+        </div>
+    </section>
+    <main class="profile-page-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4">
+                    <div class="profile-sidebar-box">
+                        <!-- profile head area -->
+                        <div class="profile-bar-head">
+                            <img src="./assets/images/profile.png" alt="profile picture" class="img-fluid pro-pic" data-toggle="modal" data-target="#profielModal" />
+                            <h3 class="profile-name">SteveRogers11</h3>
+                            <div class="profile-title">
+                                <img src="./assets/images/trophy.svg" alt="trophy image" />
+                                <span class="profile-title-self">Novice Task Master</span>
+                                <img src="./assets/images/trophy.svg" alt="trophy image" />
+                            </div>
+                        </div>
+                        <!-- profile side bar form area -->
+                        <div class="profile-sidebar-form">
+                            <form>
+                                <div class="form-group form-filed-box">
+                                    <label for="username" class="top-label">Username</label>
+                                    <input type="text" class="form-control input-area" id="username" placeholder="Enter Your User Name" value="SteveRogers11" />
+                                    <small class="form-text text-muted edit-form">EDIT</small>
+                                </div>
+                                <div class="form-group form-filed-box">
+                                    <label for="name" class="top-label">Name</label>
+                                    <input type="text" class="form-control input-area" id="name" placeholder="Enter Your Name" value="Steve Rogers" />
+                                    <small class="form-text text-muted edit-form">EDIT</small>
+                                </div>
+                                <div class="form-group form-filed-box">
+                                    <label for="email" class="top-label">Email</label>
+                                    <input type="email" class="form-control input-area email-input" id="email" disabled value="Steverog@gmail.com" />
+                                    <small class="form-text text-muted under-input-text">Connected Via google and facebook account</small>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- profile side bar form area end -->
+                        <div class="profile-from">
+                            <span>Doodater since May 2019</span>
+                        </div>
+                    </div>
+                    <div class="footer-crd mt-3 text-center">
+                        <a href="">Developed by Gleecus Techlabs</a>
+                    </div>
+                </div>
+                <!-- main area of profile -->
+                <div class="col-lg-9 col-md-8">
+                    <a class="back-link font-14" href="#"> <i class="fa fa-chevron-left  mr-2" aria-hidden="true"></i> Back</a>
+                    <h4 class="page-header">My Achievements</h4>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="media">
+                                <div class="media-thumb mr-3">
+                                    <img class="d-flex align-self-center" src="./assets/images/trophy-lg.png" alt="Generic placeholder image">
+                                </div>
+                                <div class="media-body mt-2 master-level">
+                                    <span class="mb-1">You are a Task Master</span>
+                                    <h5>Novice Level</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="ach-square card-border px-3">
+                                <span>Total Points earned till now</span>
+                                <h5>255</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="ach-square card-border px-3">
+                                <span>Points needed to reach next level</span>
+                                <h5>745</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12">
+                            <div class="progress my-5">
+                                <div class="progress-bar" role="progressbar" style="width: 41%; height: 10px;border-radius: 10px;background-color: #2D3E9F; color: #C9D7FF;" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                            <div class="d-flex flex-column">
+                                <img src="./assets/images/mainarea/trophy.svg" alt="main area image" class="img-fluid">
+                                <div class="card-body text-center level-label active"> Novice Task Master </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="d-flex flex-column ">
+                                <img src="./assets/images/mainarea/trophy.svg" alt="main area image" class="img-fluid">
+                                <div class="card-body text-center level-label">Average Task Master </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="d-flex flex-column  ">
+                                <img src="./assets/images/mainarea/trophy.svg" alt="main area image" class="img-fluid">
+                                <div class="card-body text-center level-label"> Good Task Master</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="d-flex flex-column align-items-end ">
+                                <img src="./assets/images/mainarea/trophy.svg" alt="main area image" class="img-fluid">
+                                <div class="card-body text-center level-label"> Ninja Task Master </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="d-flex flex-wrap mt-3">
+                                <div class="task-count-block card-border  m-2">
+                                    <span class="b-border"></span>
+                                    <div class="m-3">
+                                        <span class="font-14">No of tasks <br> Created</span>
+                                        <h5>266</h5>
+                                    </div>
+                                </div>
+                                <div class="task-count-block card-border m-2">
+                                    <span class="b-border"></span>
+                                    <div class="m-3">
+                                        <span>No of tasks <br> Created</span>
+                                        <h5>266</h5>
+                                    </div>
+                                </div>
+                                <div class="task-count-block card-border  m-2">
+                                    <span class="b-border"></span>
+                                    <div class="m-3">
+                                        <span>No of tasks <br> Created</span>
+                                        <h5>266</h5>
+                                    </div>
+                                </div>
+                                <div class="task-count-block card-border  m-2">
+                                    <span class="b-border"></span>
+                                    <div class="m-3">
+                                        <span>No of tasks <br> Created</span>
+                                        <h5>266</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="mt-3">
+                                <p class="text-color font-14 mb-4">Your Task completion analysis</p>
+                                <div class="media">
+                                    <div class="media-thumb mr-3">
+                                        <img class="d-flex align-self-center" src="./assets/images/trophy-lg.png" alt="Generic placeholder image">
+                                    </div>
+                                    <div class="media-body mt-2 master-level text-color">
+                                        <h5 class="font-weight-bold">200 tasks</h5>
+                                        <p>were done within Doo Date</p>
+                                    </div>
+                                </div>
+                                <p class="text-color text-center font-14 mt-3">
+                                    <b class="font-14"> Doo Tip : </b>
+                                    Completing the tasks in time increases the percentage and your habit formation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-color font-24 psans-bold mb-0">Points History</p>
+                        <span class="mt-2 mb-3 d-block">You can find your points history here</span>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <table class="table w-100 achieve-table mt-3">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Details</th>
+                                        <th>Points Earned</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">July 03, 2020</th>
+                                        <td>New Task Creation</td>
+                                        <td><b>25</b></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">July 03, 2020</th>
+                                        <td>New Task Creation</td>
+                                        <td><b>25</b></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">July 03, 2020</th>
+                                        <td>Task Completion before doo date</td>
+                                        <td><b>25</b></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">July 03, 2020</th>
+                                        <td>New Task Creation</td>
+                                        <td><b>25</b></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">July 03, 2020</th>
+                                        <td>New Task Creation</td>
+                                        <td><b>25</b></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">July 03, 2020</th>
+                                        <td>Task Completion before doo date</td>
+                                        <td><b>25</b></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">July 03, 2020</th>
+                                        <td>New Task Creation</td>
+                                        <td><b>25</b></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <nav aria-label="Page navigation example mt-4 table-nav">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled">
+                                        <a class="page-link text-color" href="#" tabindex="-1">Previous</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link text-color" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!-- main area of profile end -->
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

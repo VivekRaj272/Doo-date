@@ -165,6 +165,7 @@ a.btn {
     padding-top: 0.875rem;
 }
 
+
 /*nav*/
 
 a.navbar-brand.doo-sm-brand {
@@ -190,16 +191,13 @@ a.navbar-brand.doo-sm-brand {
     .doo-mock-wrap {
         display: none;
     }
-
     .corner-tag {
         display: none;
     }
-
     .login-wrap {
         margin-top: 20px;
         width: unset;
     }
-
     .doo-logo img {
         width: auto;
         height: 4.6875rem;
@@ -229,11 +227,9 @@ a.navbar-brand.doo-sm-brand {
         max-height: 10vh;
         overflow: hidden;
     }
-
     .image-assests {
         text-align: center;
     }
-
     .image-assests>img {
         width: 70%;
         height: auto;
@@ -259,7 +255,6 @@ a.navbar-brand.doo-sm-brand {
     .section-404 {
         max-height: unset;
     }
-
     .mountain {
         display: none;
     }
@@ -286,6 +281,7 @@ a.navbar-brand.doo-sm-brand {
     border-radius: 40px;
 }
 
+
 /*500*/
 
 .error-block {
@@ -293,7 +289,6 @@ a.navbar-brand.doo-sm-brand {
     background-color: #F2F3F6;
     overflow: hidden;
     position: relative;
-
 }
 
 .error-img {
@@ -331,8 +326,8 @@ a.navbar-brand.doo-sm-brand {
     position: absolute;
     top: -1.7rem;
     height: 5rem;
-
 }
+
 
 /*policy*/
 
@@ -349,7 +344,6 @@ a.navbar-brand.doo-sm-brand {
     color: #808080;
 }
 
-
 .data-list {
     padding-left: 0px;
 }
@@ -357,8 +351,6 @@ a.navbar-brand.doo-sm-brand {
 .data-list li {
     list-style: none;
     line-height: 24px;
-
-
 }
 
 .data-list li:before {
@@ -368,21 +360,6 @@ a.navbar-brand.doo-sm-brand {
     margin: -2px 9px 0px 0px;
     display: inline-block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*profiel page css */
@@ -447,10 +424,13 @@ a.navbar-brand.doo-sm-brand {
     height: 8vh;
 }
 
-
+.fixed {
+    position: fixed;
+}
 
 
 /* profiel page css */
+
 .header-image {
     padding: 10px 0px;
 }
@@ -496,6 +476,7 @@ a.navbar-brand.doo-sm-brand {
     margin-top: 2rem;
 }
 
+
 /* tab section */
 
 .tab-self {
@@ -512,7 +493,6 @@ a.navbar-brand.doo-sm-brand {
     .tab-self {
         padding-right: 0.5rem;
     }
-
     .col-form-label {
         display: inline-block;
         margin-left: 1.2rem;
@@ -563,11 +543,11 @@ a.navbar-brand.doo-sm-brand {
     .m-l-l {
         margin-left: 13rem;
     }
-
     .m-l {
         margin-left: 7rem;
     }
 }
+
 
 /* .animation {
   display: block;
@@ -582,15 +562,14 @@ a.navbar-brand.doo-sm-brand {
     transform: translateX(0px);
   }
 } */
+
 .detail-form {
     margin: 2rem 0rem;
 }
 
 .form-pro {
     background-color: none;
-    outline: none !important
-
-    ;
+    outline: none !important;
     border: 0px;
     border-radius: 3rem;
     padding-left: 1.5rem;
@@ -598,6 +577,12 @@ a.navbar-brand.doo-sm-brand {
     font-weight: bold;
     color: #2d3e9f;
     background: #f2f3f6;
+    height: 40px;
+    outline: none;
+}
+
+.form-pro:focus {
+    box-shadow: none !important;
 }
 
 .edit-button {
@@ -616,21 +601,23 @@ a.navbar-brand.doo-sm-brand {
 }
 
 .subscribe-button {
-      background: #ffffff 0% 0% no-repeat padding-box;
     box-shadow: -10px -10px 20px #ffffff7f;
+    background: #F8F8F8 0% 0% no-repeat padding-box;
     border: 1px solid #ffffff;
     border-radius: 0px 23px 23px 0px;
     opacity: 1;
     color: #2d3e9f;
     padding: 0.5rem 2rem;
-    height: 38px;
+    height: 40px;
 }
 
 .form-pro::placeholder {
     color: #2d3e9f;
 }
 
+
 /* synced form footer */
+
 .text-focus-synced {
     font: Regular 16px/17px Product Sans;
     letter-spacing: 0px;
@@ -660,16 +647,9 @@ a.navbar-brand.doo-sm-brand {
     color: #ccc;
 }
 
-
 .login-mod {
     border-radius: 0px 0px 0.625rem 0.625rem;
 }
-
-
-
-
-
-
 
 
 /*large screen fix media query*/
@@ -682,11 +662,9 @@ a.navbar-brand.doo-sm-brand {
     * {
         font-size: 18px;
     }
-
     .container {
         max-width: 1400px;
     }
-
     .top-container {
         min-height: 80vh !important;
     }
@@ -696,7 +674,6 @@ a.navbar-brand.doo-sm-brand {
     * {
         font-size: 19px;
     }
-
     .container {
         max-width: 1500px;
     }
@@ -706,7 +683,6 @@ a.navbar-brand.doo-sm-brand {
     * {
         font-size: 20px;
     }
-
     .container {
         max-width: 1700px;
     }

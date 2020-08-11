@@ -75,6 +75,10 @@ button {
 }
 
 
+.text-color {
+    color: #2D3E9F;
+}
+
  /*font sizes*/
 
 .font-10 {
@@ -159,4 +163,8 @@ button {
 }
 .upper-case {
     text-transform: uppercase;
+}
+
+.relative {
+    position: relative;
 }
