@@ -13,13 +13,19 @@
     <!-- custom style link -->
     <link rel="stylesheet" href="profile-style.css" />
     <link rel="stylesheet" href="Doo-common.css" />
+
+    <link rel="stylesheet" href="src/css/rescalendar.css">
+    <script type="text/javascript" src="calender-scroll.js"></script>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
-<body>
+<body class="task-home-body">
     <section class="fixed-sidebar">
         <div class="fixed-sidebar-icons">
             <div class="top-icons">
@@ -41,12 +47,12 @@
                 </a>
             </div>
             <div class="top-icons">
-                <a href="">
+                <a href="tasks-home.html">
                     <img src="./assets/images/sidebar/2.svg" alt="icon" class="img-fluid" />
                 </a>
             </div>
             <div class="top-icons">
-                <a href="" class="active-link">
+                <a href="profile.html" class="active-link">
                     <img src="./assets/images/sidebar/3.svg" alt="icon" class="img-fluid" />
                 </a>
             </div>
@@ -58,7 +64,7 @@
     <main class="profile-page-main">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-3">
+                <div class="col-lg-3 col-md-4">
                     <div class="profile-sidebar-box">
                         <!-- profile head area -->
                         <div class="profile-bar-head pb-4 no-border pt-4">
@@ -120,140 +126,150 @@
                     </div>
                 </div>
                 <!-- main area of profile -->
-                <div class="col-lg-9 col-md-9">
-                    <section class="serach-bar mb-5">
-                        <div class="row">
-                            <div class="col-8">
-                                <div class="search-widget w-100">
-                                    <input name="name" type="text" placeholder="Search tasks or tasklists">
-                                    <button id="mybutton"><i class="fa fa-search"></i></button>
+                <div class="col-lg-9 col-md-8">
+                    <div class="profile-main-area">
+                        <section class="serach-bar mb-5">
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="search-widget w-100">
+                                        <input name="name" type="text" placeholder="Search tasks or tasklists">
+                                        <button id="mybutton"><i class="fa fa-search"></i></button>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <button class="task-btn"><i class="fa fa-plus"></i> Create New Task</button>
+                                </div>
+                                <div class="col-1">
+                                    <button class="bell-btn mt-2"> <i class="fa fa-bell"></i></button>
                                 </div>
                             </div>
-                            <div class="col-3">
-                                <button class="task-btn"><i class="fa fa-plus"></i> Create New Task</button>
+                        </section>
+                        <section>
+                            <div class="row">
+                                <div class="col-7">
+                                    <div class="cal-carousel-wrap">
+                                        <h4>Calender carousel</h4>
+                                        <div class="rescalendar" id="my_calendar_calSize"></div>
+
+                                    </div>
+                                    <div class="d-flex justify-content-between white-bborder mt-5">
+                                        <p class="text-nowrap text-color-grey font-weight-bold  pb-1">MY TASKS <span class="text-color-blue"><img class="info-icon" src="./assets/images/task-home/info.png"></span> </p>
+                                        <div class="text-color-blue font-weight-bold font-20">
+                                            Today's Tasks
+                                        </div>
+                                    </div>
+                                    <section class="tasks-wrapper">
+                                        <div class="ml-3">
+                                            <p class="text-color-grey font-weight-bold font-20 py-3">20th June 2020 <span class="text-color-blue font-16 ml-3">You have 4 tasks for this day</span> </p>
+                                        </div>
+                                        <div class="my-4  card-border p-3 task-card">
+                                            <i class="far fa-check-circle"></i>
+                                            <div class="task-border-m"> </div>
+                                            <img class="close-circ" src="./assets/images/task-home/swap-toggle.png">
+                                            <h5 class="font-24 mt-3">Pay the premium of my family health plan</h5>
+                                            <div class="d-inline-flex mt-2 text-color-blue font-weight-bold">
+                                                <p><i class="fa fa-calendar-o" aria-hidden="true"></i> Tomorrow, 09:30 am</p>
+                                                <p class="ml-3"><i class="fa fa-bell-o" aria-hidden="true"></i> Today, 09:20 pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="my-4 mb-2 card-border p-3 task-card">
+                                            <i class="far fa-check-circle"></i>
+                                            <div class="task-border-m"> </div>
+                                            <img class="close-circ" src="./assets/images/task-home/swap-toggle.png">
+                                            <h5 class="font-24 mt-3">Pay the premium of my family health plan</h5>
+                                            <div class="d-inline-flex mt-2 text-color-blue font-weight-bold">
+                                                <p><i class="fa fa-calendar-o" aria-hidden="true"></i> Tomorrow, 09:30 am</p>
+                                                <p class="ml-3"><i class="fa fa-bell-o" aria-hidden="true"></i> Today, 09:20 pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-4  card-border p-3 task-card">
+                                            <i class="far fa-check-circle"></i>
+                                            <div class="task-border-m"> </div>
+                                            <img class="close-circ" src="./assets/images/task-home/swap-toggle.png">
+                                            <h5 class="font-24 mt-3">Pay the premium of my family health plan</h5>
+                                            <div class="d-inline-flex mt-2 text-color-blue font-weight-bold">
+                                                <p><i class="fa fa-calendar-o" aria-hidden="true"></i> Tomorrow, 09:30 am</p>
+                                                <p class="ml-3"><i class="fa fa-bell-o" aria-hidden="true"></i> Today, 09:20 pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-4  card-border p-3 task-card">
+                                            <i class="far fa-check-circle"></i>
+                                            <div class="task-border-m"> </div>
+                                            <img class="close-circ" src="./assets/images/task-home/swap-toggle.png">
+                                            <h5 class="font-24 mt-3">Pay the premium of my family health plan</h5>
+                                            <div class="d-inline-flex mt-2 text-color-blue font-weight-bold">
+                                                <p><i class="fa fa-calendar-o" aria-hidden="true"></i> Tomorrow, 09:30 am</p>
+                                                <p class="ml-3"><i class="fa fa-bell-o" aria-hidden="true"></i> Today, 09:20 pm</p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="col-5">
+                                    <div class="d-flex justify-content-between white-bborder">
+                                        <p class="text-nowrap text-color-grey  pb-1">Your Missed tasks <span class="text-color-blue">( 24 )</span> </p>
+                                        <img class="info-icon" src="./assets/images/task-home/info.png">
+                                    </div>
+                                    <ul class="missed-task-list card-border p-3">
+                                        <li class="m-task-item party-3 py-3">
+                                            <div class="left-task-border"> </div>
+                                            <h5>Information Architecture</h5>
+                                            <p>Complete the deliverables on time.</p>
+                                        </li>
+                                        <li class="m-task-item party-3 py-3">
+                                            <div class="left-task-border"> </div>
+                                            <h5>Have to give my bike for service this week</h5>
+                                        </li>
+                                        <li class="m-task-item party-3 py-3">
+                                            <div class="left-task-border"> </div>
+                                            <h5>Information Architecture</h5>
+                                            <p>Complete the deliverables on time.</p>
+                                        </li>
+                                        <li class="m-task-item party-3 py-3">
+                                            <div class="left-task-border"> </div>
+                                            <h5>Information Architecture</h5>
+                                            <p>Complete the deliverables on time.</p>
+                                        </li>
+                                    </ul>
+                                    <div class="d-flex justify-content-between mt-4 white-bborder">
+                                        <p class="text-nowrap text-color-grey pb-1">Task sharing requests <span class="text-color-blue">( 22 )</span> </p>
+                                        <img class="info-icon" src="./assets/images/task-home/info.png">
+                                    </div>
+                                    <div class="task-req-block card-border p-3 my-3">
+                                        <div class="">
+                                            <img class="close-circ" src="./assets/images/task-home/round-close.png">
+                                            <div class="d-inline-flex align-items-center">
+                                                <img src="./assets/images/task-home/dp-sm.png">
+                                                <h5 class="p-2 font-16 text-color-grey">Alisa Fox</h5>
+                                            </div>
+                                            <p class="font-18  mb-1 text-color-grey">Surprise party for sid</p>
+                                            <p class="text-color-blue font-weight-bold"><i class="fa fa-calendar-o mr-2" aria-hidden="true"></i> 25/07/2020 , 9:30 am</p>
+                                        </div>
+                                        <div class="text-center">
+                                            <button class="ad-task-btn card-border">Add to my tasks</button>
+                                        </div>
+                                    </div>
+                                    <div class="task-req-block card-border p-3 my-3">
+                                        <div class="">
+                                            <img class="close-circ" src="./assets/images/task-home/round-close.png">
+                                            <div class="d-inline-flex align-items-center">
+                                                <img src="./assets/images/task-home/dp-sm.png">
+                                                <h5 class="p-2 font-16 text-color-grey">Alisa Fox</h5>
+                                            </div>
+                                            <p class="font-18  mb-1 text-color-grey">Surprise party for sid</p>
+                                            <p class="text-color-blue font-weight-bold"><i class="fa fa-calendar-o mr-2" aria-hidden="true"></i> 25/07/2020 , 9:30 am</p>
+                                        </div>
+                                        <div class="text-center">
+                                            <button class="ad-task-btn card-border">Add to my tasks</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-1">
-                                <button class="bell-btn mt-2"> <i class="fa fa-bell"></i></button>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <div class="row">
-                            <div class="col-7">
-                                <div class="carousel-wrap">
-                                    carousel wrap
-                                </div>
-                                <div class="d-flex justify-content-between white-bborder mt-5">
-                                    <p class="text-nowrap text-color-grey font-weight-bold  pb-1">MY TASKS <span class="text-color-blue"><img class="info-icon" src="./assets/images/task-home/info.png"></span> </p>
-                                    <div class="text-color-blue font-weight-bold font-20">
-                                        Today's Tasks
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <p class="text-color-grey font-weight-bold font-20 py-3">20th June 2020 <span class="text-color-blue font-16 ml-3">You have 4 tasks for this day</span> </p>
-                                </div>
-                                <section class="tasks-wrapper">
-                                    <div class="my-4  card-border p-3 task-card">
-                                        <div class="task-border-m"> </div>
-                                        <img class="close-circ" src="./assets/images/task-home/swap-toggle.png">
-                                        <h5 class="font-24 mt-3">Pay the premium of my family health plan</h5>
-                                        <div class="d-inline-flex mt-2 text-color-blue font-weight-bold">
-                                            <p><i class="fa fa-calendar-o" aria-hidden="true"></i> Tomorrow, 09:30 am</p>
-                                            <p class="ml-3"><i class="fa fa-bell-o" aria-hidden="true"></i> Today, 09:20 pm</p>
-                                        </div>
-                                    </div>
-                                    <div class="my-4 mb-2 card-border p-3 task-card">
-                                        <div class="task-border-m"> </div>
-                                        <img class="close-circ" src="./assets/images/task-home/swap-toggle.png">
-                                        <h5 class="font-24 mt-3">Pay the premium of my family health plan</h5>
-                                        <div class="d-inline-flex mt-2 text-color-blue font-weight-bold">
-                                            <p><i class="fa fa-calendar-o" aria-hidden="true"></i> Tomorrow, 09:30 am</p>
-                                            <p class="ml-3"><i class="fa fa-bell-o" aria-hidden="true"></i> Today, 09:20 pm</p>
-                                        </div>
-                                    </div>
-                                    <div class="mt-4  card-border p-3 task-card">
-                                        <div class="task-border-m"> </div>
-                                        <img class="close-circ" src="./assets/images/task-home/swap-toggle.png">
-                                        <h5 class="font-24 mt-3">Pay the premium of my family health plan</h5>
-                                        <div class="d-inline-flex mt-2 text-color-blue font-weight-bold">
-                                            <p><i class="fa fa-calendar-o" aria-hidden="true"></i> Tomorrow, 09:30 am</p>
-                                            <p class="ml-3"><i class="fa fa-bell-o" aria-hidden="true"></i> Today, 09:20 pm</p>
-                                        </div>
-                                    </div>
-                                    <div class="mt-4  card-border p-3 task-card">
-                                        <div class="task-border-m"> </div>
-                                        <img class="close-circ" src="./assets/images/task-home/swap-toggle.png">
-                                        <h5 class="font-24 mt-3">Pay the premium of my family health plan</h5>
-                                        <div class="d-inline-flex mt-2 text-color-blue font-weight-bold">
-                                            <p><i class="fa fa-calendar-o" aria-hidden="true"></i> Tomorrow, 09:30 am</p>
-                                            <p class="ml-3"><i class="fa fa-bell-o" aria-hidden="true"></i> Today, 09:20 pm</p>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                            <div class="col-5">
-                                <div class="d-flex justify-content-between white-bborder">
-                                    <p class="text-nowrap text-color-grey  pb-1">Your Missed tasks <span class="text-color-blue">( 24 )</span> </p>
-                                    <img class="info-icon" src="./assets/images/task-home/info.png">
-                                </div>
-                                <ul class="missed-task-list card-border p-3">
-                                    <li class="m-task-item party-3 py-3">
-                                        <div class="left-task-border"> </div>
-                                        <h5>Information Architecture</h5>
-                                        <p>Complete the deliverables on time.</p>
-                                    </li>
-                                    <li class="m-task-item party-3 py-3">
-                                        <div class="left-task-border"> </div>
-                                        <h5>Have to give my bike for service this week</h5>
-                                    </li>
-                                    <li class="m-task-item party-3 py-3">
-                                        <div class="left-task-border"> </div>
-                                        <h5>Information Architecture</h5>
-                                        <p>Complete the deliverables on time.</p>
-                                    </li>
-                                    <li class="m-task-item party-3 py-3">
-                                        <div class="left-task-border"> </div>
-                                        <h5>Information Architecture</h5>
-                                        <p>Complete the deliverables on time.</p>
-                                    </li>
-                                </ul>
-                                <div class="d-flex justify-content-between mt-4 white-bborder">
-                                    <p class="text-nowrap text-color-grey pb-1">Task sharing requests <span class="text-color-blue">( 22 )</span> </p>
-                                    <img class="info-icon" src="./assets/images/task-home/info.png">
-                                </div>
-                                <div class="task-req-block card-border p-3 my-3">
-                                    <div class="">
-                                        <img class="close-circ" src="./assets/images/task-home/round-close.png">
-                                        <div class="d-inline-flex align-items-center">
-                                            <img src="./assets/images/task-home/dp-sm.png">
-                                            <h5 class="p-2 font-16 text-color-grey">Alisa Fox</h5>
-                                        </div>
-                                        <p class="font-18  mb-1 text-color-grey">Surprise party for sid</p>
-                                        <p class="text-color-blue font-weight-bold"><i class="fa fa-calendar-o mr-2" aria-hidden="true"></i> 25/07/2020 , 9:30 am</p>
-                                    </div>
-                                    <div class="text-center">
-                                        <button class="ad-task-btn card-border">Add to my tasks</button>
-                                    </div>
-                                </div>
-                                <div class="task-req-block card-border p-3 my-3">
-                                    <div class="">
-                                        <img class="close-circ" src="./assets/images/task-home/round-close.png">
-                                        <div class="d-inline-flex align-items-center">
-                                            <img src="./assets/images/task-home/dp-sm.png">
-                                            <h5 class="p-2 font-16 text-color-grey">Alisa Fox</h5>
-                                        </div>
-                                        <p class="font-18  mb-1 text-color-grey">Surprise party for sid</p>
-                                        <p class="text-color-blue font-weight-bold"><i class="fa fa-calendar-o mr-2" aria-hidden="true"></i> 25/07/2020 , 9:30 am</p>
-                                    </div>
-                                    <div class="text-center">
-                                        <button class="ad-task-btn card-border">Add to my tasks</button>
-                                    </div>
-                                </div>
-                            </div>
-                    </section>
+                        </section>
+                    </div>
                 </div>
             </div>
         </div>
+    </main>
 </body>
 
 </html>
